@@ -13,7 +13,7 @@ namespace BALTA.IO_FundamentosEF.Data
         public DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlServer("Server=DEVELOPMENT;Database=Blog;Integrated Security=True;TrustServerCertificate=True");
+            => options.UseSqlServer("Server=DEVELOPMENT;Database=FluentBlog;Integrated Security=True;TrustServerCertificate=True");
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

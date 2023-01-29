@@ -33,7 +33,7 @@ internal class Program
         //     CreateDate = DateTime.Now,
         //     LastUpdateDate = DateTime.Now
         // };
-        
+
         // context.Users.Add(new User
         // {
         //     Name = "Arthur Galanti2",
@@ -44,24 +44,27 @@ internal class Program
         //     PasswordHash="12345"
         // });
         // context.SaveChanges();
-        var user = context.Users.FirstOrDefault();
-        var post = new Post
-        {
-            Author = user,
-            Body = "Meu artigo",
-            Category = new Category{
-                Name="Backend",
-                Slug="backend"
-            },
-            CreateDate = System.DateTime.Now,
-            // LastUpdateDate =
-            Slug = "meu-artigo",
-            Summary = "Neste artigo vamos conferir...",
-            // Tags =null,
-            Title = "Meu artigo",
-        };
+        // var user = context.Users.FirstOrDefault();
+        // var post = new Post
+        // {
+        //     Author = user,
+        //     Body = "Meu artigo",
+        //     Category = new Category{
+        //         Name="Backend",
+        //         Slug="backend"
+        //     },
+        //     CreateDate = System.DateTime.Now,
+        //     // LastUpdateDate =
+        //     Slug = "meu-artigo",
+        //     Summary = "Neste artigo vamos conferir...",
+        //     // Tags =null,
+        //     Title = "Meu artigo",
+        // };
 
-        context.Posts.Add(post);
-        context.SaveChanges();
+        // context.Posts.Add(post);
+        // context.SaveChanges();
+
+        // context.Posts.Add(post);
+        // context.SaveChanges();
     }
 }
